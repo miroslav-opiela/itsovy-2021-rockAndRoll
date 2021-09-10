@@ -12,6 +12,7 @@
         android:layout_height="200dp"
         android:textSize="28sp"
         android:text="@string/rock"
+        android:onClick="rock"
         app:layout_constraintBottom_toTopOf="@id/button_roll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
