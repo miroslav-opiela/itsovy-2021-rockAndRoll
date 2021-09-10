@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -22,12 +23,21 @@ public class MainActivity extends AppCompatActivity {
         buttonRoll = findViewById(R.id.button_roll);
         mediaPlayer = MediaPlayer.create(this, R.raw.sound);
         //mediaPlayer.setLooping(true);
+
+        Log.d("ROCK AND ROLL", "onCreate");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         mediaPlayer.release();
+        Log.d("ROCK AND ROLL", "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("ROCK AND ROLL", "onStop");
     }
 
     public void roll(View view) {
