@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RockAndRoll</string>
+    <string name="rock">Rock</string>
+    <string name="roll">Roll</string>
+</resources>
